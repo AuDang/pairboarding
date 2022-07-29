@@ -13,11 +13,12 @@ Fibonaci Sequence 1 1 2 3 5 8 13 21 34 55 89 144 233 377
                   1 2 3 4 5 6 7 8 
 */
 
-const fibsSum = (num) => {   // 7
+const fibsSum = (num) => {   // 4
    if (num === 1) return 1
    if (num === 2) return 2
    
    return fibsSum(num-1) + fibonacci(num)
+   // 4 + 3
 }
 const fibonacci = (num) => {
    if (num === 1) return 1
@@ -27,5 +28,8 @@ const fibonacci = (num) => {
 }
 
 
-console.log(fibsSum(3))
-console.log(fibonacci(7))
+console.log(fibsSum(4))
+console.log(fibonacci(1))
+console.log(fibonacci(2))
+console.log(fibonacci(3))
+console.log(fibonacci(4))
